@@ -8,7 +8,7 @@ Monitorización precios de alquiler para áreas geográficas municipales determi
 | Python 3 | [Enlace](https://www.python.org/downloads/) |
 | Google Chrome (v108) | [Enlace](https://www.google.com/intl/es_es/chrome/) |
 | Driver de Selenium (v108)| [Enlace](https://chromedriver.chromium.org/downloads/) |
-| Nomination (vxx) | [Enlace](https://nominatim.openstreetmap.org/ui/search.html) |
+| Nominatin (vxx) | [Enlace](https://nominatim.openstreetmap.org/ui/search.html) |
 
 ## Instalación
 - Descargar proyecto.
@@ -95,6 +95,11 @@ Después de una ejecución correcta se generará un xlsx en:
 *Monitorizacion_Alquileres/Monitor/Resultados/CuadroMando/data.xlsx* 
 
 que es leido por el cuadro de mando realizado en *tableau*.
+
+### Visualización
+Por último, una vez depurado y agregado el conjunto de datos, este se útiliza para crear una visualización mediante un cuadro de mando construido en *tableau*. Este se puede visualizar en el siguiente enlace:
+
+https://public.tableau.com/app/profile/jos.manuel6318/viz/Monitorizacinrentadealquiler/Alicante?publish=yes
 
 
 
