@@ -47,7 +47,7 @@ Después de una ejecución correcta se generará un xlsx por búsqueda guardando
 
 *Monitorizacion_Alquileres/Monitor/WebScraping/particulares/pisoscom/2022/T4/anuncios_particulares_fotocasa 2022.12.04_12.16.52.xlsx*
 
-El archivo con los anuncios de particuleres de todos los portales en estudio se guarda en la siguiente ruta:
+El archivo con los **anuncios de particulares** de todos los portales en estudio se guarda en la siguiente ruta:
 
 *Monitorizacion_Alquileres/Monitor/Resultados/particulares/anuncios_particulares 2022.12.04_12.16.52.xlsx*
 
