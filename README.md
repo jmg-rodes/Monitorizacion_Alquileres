@@ -39,3 +39,7 @@ Después de una ejecución correcta se generará un xlsx por búsqueda con los r
 
 *Monitorizacion_Alquileres/Monitor/WebScraping/particulares/2022/T4/anuncios_particulares 2022.12.04_12.16.52.xlsx*
 
+### Depuración
+
+
+
