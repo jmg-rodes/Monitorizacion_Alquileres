@@ -73,7 +73,7 @@ Una vez terminado el trimestre pasamos al tratamiento de los datos obtenidos en 
 
 - **Eliminación de duplicados dentro de la zona**. Con las viviendas asignadas a la zona se vuelve a realizar el proceso de eliminación de duplicados esta vez dentro de cada zona.
 
-- **Eliminación de *outliers***. Para la eliminación de los valores extremos en primer lugar se aplica el algoritmo KNN, sobre todo el conjunto, a continuación se eliminan los valores que disten por exceso o defecto más de 1,96 desviaciones típicas de la media dentro de cada zona.
+- **Eliminación de *outliers***. Para la eliminación de los valores extremos en primer lugar se aplica el algoritmo KNN, sobre todo el conjunto, y después se eliminan los valores que disten por exceso o defecto más de 1,96 desviaciones típicas de la media dentro de cada zona.
 
 - **Valores perdídos (NA)**. El conjuto de datos va a ser agrupado en el proceso siguiente obteniendo medidas de tendencia central y de dispersión, por lo que los valores faltantes se sustituyen por las medias de la variable.
 
