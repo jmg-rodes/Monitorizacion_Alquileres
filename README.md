@@ -8,7 +8,7 @@ Monitorización precios de alquiler para áreas geográficas municipales determi
 | Python 3 | [Enlace](https://www.python.org/downloads/) |
 | Google Chrome (v108) | [Enlace](https://www.google.com/intl/es_es/chrome/) |
 | Driver de Selenium (v108)| [Enlace](https://chromedriver.chromium.org/downloads/) |
-| Nominatin (vxx) | [Enlace](https://nominatim.openstreetmap.org/ui/search.html) |
+| Geopy | [Enlace](https://pypi.org/project/geopy/) |
 
 ## Instalación
 - Descargar proyecto.
