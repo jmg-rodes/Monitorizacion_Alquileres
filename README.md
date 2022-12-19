@@ -80,7 +80,7 @@ Una vez terminado el trimestre pasamos al tratamiento de los datos obtenidos en 
 - **Agrupación de los datos**. Para un menor consumo de recursos se agrupa el conjunto de datos por zonas obteniendo los estadísticos de interés de cada zona, así como para intervalos de rentas y dormitorios.
 
 - **Acumulación de datos trimestrales**. Una vez se tienen los datos del periodo, para este caso el trimestre, los unimos con el conjunto de datos que contiene los trimestres anteriores desde que se realiza el estudio y se guardan en la carpeta *CuadroMando* para que sean leídos por el cuadro de mando realizado en Tableau.
-  **Nota**: Los valores agrupados del periodo comprendido entre el primer trimestre de 2012 y el cuarto trimestre de 2020 se han extraido del repositorio de datos        abiertos del Ayuntamiento de Alicante [https://datosabiertos.alicante.es/?q=dataset/alquileres/resource/6c930be4-d471-48b7-813a-43b621e5dcd9#{}]
+Los valores agrupados del periodo comprendido entre el primer trimestre de 2012 y el cuarto trimestre de 2020 se han extraido del repositorio de datos abiertos del Ayuntamiento de Alicante. [Enlace](https://datosabiertos.alicante.es/?q=dataset/alquileres/resource/6c930be4-d471-48b7-813a-43b621e5dcd9#{})
 
 El modo de ejecución es el siguiente:
 - En la carpeta *Debug* abrir el script *constant_debug.py* y ajustar los parámetros (NOTA: Está ya configurado por defecto con los parámetros de interés para el estudio).
