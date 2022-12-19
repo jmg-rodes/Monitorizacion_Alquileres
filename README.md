@@ -69,7 +69,7 @@ Una vez terminado el trimestre pasamos al tratamiento de los datos obtenidos en 
 
 - **Geolocalización de las direcciones**. Para llevar a cabo este proceso existen distintas herramientas y API’s, en este caso se utiliza Nomiation por ser gratuita, con Google Earth o la API de Google V8 se obtienen mejores resultados, pero para la primera el proceso no se puede automatizar y la segunda es de pago.
 
-- **Asignación de coordenadas a las zonas**. Con las viviendas geolocalizadas se aplica el algoritmo punto-polígono para la asignación de estas a sus zonas correspondientes.
+- **Asignación de coordenadas a las zonas**. Con las viviendas geolocalizadas se aplica el algoritmo punto-polígono para la asignación de estas a sus zonas correspondientes. Utilizamos el script *./Geolocalizacion/Geolocalización.py*.
 
 - **Eliminación de duplicados dentro de la zona**. Con las viviendas asignadas a la zona se vuelve a realizar el proceso de eliminación de duplicados esta vez dentro de cada zona.
 
