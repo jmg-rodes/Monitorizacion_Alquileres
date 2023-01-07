@@ -6,13 +6,12 @@ HTTP_STATUS_OK = 200
 
 REQUEST_TIMEOUT = 5
 
-portales = ['pisoscom', 'fotocasa']
-#portales = ['fotocasa','idealista','pisoscom']
+portales = ['fotocasa','idealista','pisoscom']
  
 # ALICANTE 
 BASE_URL_pisoscom = 'https://www.pisos.com/alquiler/pisos-alicante_alacant/fecharecientedesde-desc/'
 BASE_URL_fotocasa = 'https://www.fotocasa.es/es/alquiler/viviendas/alicante-alacant/todas-las-zonas/l?sortType=publicationDate'
-#BASE_URL_idealista = 'https://www.idealista.com/alquiler-viviendas/alicante-alacant-alicante/?ordenado-por=fecha-publicacion-desc'
+BASE_URL_idealista = 'https://www.idealista.com/alquiler-viviendas/alicante-alacant-alicante/?ordenado-por=fecha-publicacion-desc'
 
 DEFAULT_CITY = 'Alicante / Alacant'
 
