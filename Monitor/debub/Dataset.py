@@ -6,6 +6,7 @@ Cre ated on Thu Nov 24 16:52:53 2022
 """
 import debug_fotocasa as fotocasa_dep
 import debug_pisoscom as pisoscom_dep
+import debug_idealista as idealista_dep
 from constant_debug import *
 import Geolocalizacion.Geolocalizacion as geo
 import pandas as pd
@@ -468,28 +469,22 @@ def dormitorios(df):
 # Leemos y unimos los dataset diarios de cada portal
 df_fotocasa = unir_excel(anyo, trim, portal='fotocasa', drop=[7])
 df_pisoscom = unir_excel(anyo, trim, portal='pisoscom', drop=[6])
-
+df_idealista = unir_excel(anyo, trim, portal='idealista', drop=[3])
 
 # Guardamos los archivos por si queremos extraer otras variables posteriormente
 store_data(df_fotocasa, anyo, trim, portal='fotocasa')
 store_data(df_pisoscom, anyo, trim, portal='pisoscom')
+store_data(df_idealista, anyo, trim, portal='idealista')
    
 # Depuramos y unimos los dataset
 df_fotocasa_dep = fotocasa_dep.debug_dataset(df_fotocasa)
-df_pisoscom_dep = pisoscom_dep.debug_dataset(df_pisoscom) 
-df_informe = pd.concat([df_fotocasa_dep, df_pisoscom_dep])
+df_pisoscom_dep = pisoscom_dep.debug_dataset(df_pisoscom)
+df_idealista_dep = idealista_dep.debug_dataset(df_idealista)  
+df_informe = pd.concat([df_idealista, df_fotocasa_dep, df_pisoscom_dep])
 df_informe.columns = ['Fecha anuncio','Fuente','Precio','Calle','Zona','m2_C','m2_U','Dormitorios','Baños','Planta','Tipo']
 
-# Quito los duplicados entre webs
+# Se quitan los duplicados entre webs
 df_informe = df_informe.drop_duplicates(df_informe.columns[df_informe.columns.isin(['Calle','Zona','m2_U','Dormitorios','Baños'])])
-
-
-########### para pruebas
-df_informeH = df_informe.head(50)
-df_informeT = df_informe.tail(50)
-df_informe = pd.concat([df_informeH, df_informeT])
-###########
-
 
 df_informe.index = range(0, len(df_informe))
 df_informe['Id_Zona'] = False
