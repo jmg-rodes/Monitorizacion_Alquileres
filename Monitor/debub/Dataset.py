@@ -177,11 +177,11 @@ def elimina_dup(df):
     a criterios más laxos y mantiene los registros de la web principal.
     '''
     
-    df_fotocasa_Y =df[df['Fuente'].str.contains('Fotocasa')]
-    df_fotocasa_N =df[df['Fuente'].str.contains('Fotocasa')==False]
-    df = df.drop_duplicates(df.columns[df.columns.isin(['Precio','Id_Zona','m2_U','Dormitorios','Baños'])])
-    df_fotocasa_N =df[df['Fuente'].str.contains('Fotocasa')==False]
-    df = pd.concat([df_fotocasa_Y, df_fotocasa_N])
+    df_idealista_Y =df[df['Fuente'].str.contains('Idealista')]
+    df_idealista_N =df[df['Fuente'].str.contains('Idealista')==False]
+    df = df.drop_duplicates(df.columns[df.columns.isin(['Id_Zona','Precio','m2_U','Dormitorios','Baños'])])
+    df_idealista_N =df[df['Fuente'].str.contains('Idealista')==False]
+    df = pd.concat([df_idealista_Y, df_idealista_N])
     
     return df
 
