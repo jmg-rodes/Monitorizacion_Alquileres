@@ -62,17 +62,14 @@ def debug_dataset(df):
     df = extrae_direccion(df)   
     columns_names = list(range(0,df.shape[1]))
     df.columns = columns_names
-     
-    
-    # Se separa las direcciones de las zonas      
-    #df = df.reindex(columns=range(0, 11, 1))
-    
+        
     df = direcciones(df)
     
+    # Se separa la columna baños
+    df = extrae_valor(df, sep = ' ', col = 8, drop = 1, n_col = [8])
     
-    
-    # Corregimos los NA
-    #df = correc_na(df)
+    # Se ordena el dataframe   
+    df = df[[0,1,2,3,4,6,7,8,9,10]]
    
     return df
     
