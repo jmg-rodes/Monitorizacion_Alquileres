@@ -47,14 +47,9 @@ def debug_dataset(df):
     df = extrae_valor(df, sep = ', ', col = 18, drop = 0, n_col = [18])
     df = extrae_valor(df, sep = ' m²', col = 18, drop = 1, n_col = ['18'])
     
-    
     # Se seleccionan las variables que se necesitan para el informe
     df = df.iloc[:,[0,1,2,4,7,20,9,19,11]]
     
-    # Se separa la columna dirección
-    #df = extrae_valor(df, sep = ' en ', col = 4, drop = 0, n_col = [10,3])
-    
-        
     # Se ordena el dataframe   
     #df = df[[0,1,2,3,4,6,7,8,9,10]]
     
