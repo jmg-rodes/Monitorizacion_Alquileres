@@ -270,7 +270,9 @@ def estadisticos(df):
     #df = df_informe
     Id_Zona = pd.DataFrame(df.groupby(['Id_Zona'])['Precio'].count().index)
     
-    Zona = pd.DataFrame(df.groupby(['Zona'])['Precio'].count().index)
+    Zona = pd.DataFrame(df.groupby(['Id_Zona','Zona'])['Precio'].count())
+    Zona = Zona.index.get_level_values("Zona")
+    Zona = pd.DataFrame(Zona)
     
     n = pd.DataFrame(df.groupby(['Id_Zona'])['Precio'].count())
     n.index = range(n.shape[0])
