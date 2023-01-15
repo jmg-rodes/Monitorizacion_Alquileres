@@ -12,7 +12,7 @@ import numpy as np
 def geolocalizacion(Direcciones_dataframe):
     
     '''
-    Basado en el seudo código: https:www
+    Función que asgina el código de zona a cada coordenada
     '''
     
     #Direcciones_dataframe = pd.read_excel("./Geolocalizacion/Direcciones.xlsx")
